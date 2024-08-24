@@ -1,0 +1,27 @@
+* {
+  background-color: rgba(103, 178, 180, 0.774);
+}
+p {
+  text-indent: 30px;
+  text-align: justify;
+}
+
+#principal {
+  /*criei uma nova tag para poder só mexer nela, no caso do titulo eu gostaria de fazer ele diferente dos demais mantendo a coerencia do site, # significa id, class (significa .=ponto)serve para varias criacoes de tags, posso configurar um paragrafo,titulo separadamente usando class, id é apenas um por arquivo.*/
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  background-color: #999799; /*Para grifar uma parte do texto;, envelopar(crtl + ceta pra cima + p+ enter) colocar a tag (span) e colocar class ou id,*/
+}
+h1 {
+  text-align: center;
+}
+
+.basico {
+  background-color: #e0e2db;
+}
+.intermediario {
+  background-color: #d9594c;
+}
+.avancado {
+  background-color: #fca311;
+}

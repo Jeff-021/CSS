@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caixas</title>
+    <style>
+      h1 {
+        background-color: lightgray;
+        height: 84px;
+        width: 242px;
+
+        /**/
+        border-width: 5px;
+        border-style: solid;
+        border-color: darkslategray;
+
+        /*eu posso simplificar border, padding,margin e outline, inves de escrever 3 linhas, posso apenas fazer uma linha com as 3 propriedades, abrir um outro arquivo para mostrar*/
+
+        padding-top: 13px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px; /*padding significa o espacamento das letras com a borda, o top esta diferente pois eu o deixei centralizado, usando a ferramenta do crhome, muito importante usar*/
+        margin-top: 13px;
+        margin-right: 10px;
+        margin-bottom: 36px;
+        margin-left: 10px;
+        /*para deixar a margem no meio colocar (auto), na medida da esquerda e direita*/
+
+        outline-width: 5px;
+        outline-style: dashed;
+        outline-color: blanchedalmond;
+        /*o contorno, isso é alem da borda, por isso tem o falhado na imagem, abrir com o navegador*/
+      }
+
+      a {
+        color: rgb(226, 39, 39);
+        border-width: 5px; /*tamanho da borda, para ativar a borda, tenho que colocar essas 3 tags*/
+        border-style: solid; /*melhor tipo de contorno, solid*/
+        border-color: rgb(0, 0, 0);
+        /*espaçamento do conteudo até a borda a baixo*/
+        padding-top: 3px;
+        padding-right: 3px;
+        padding-bottom: 3px;
+        padding-left: 3px;
+
+        margin-top: 2px;
+        margin-right: 4px;
+        margin-bottom: 2px;
+        margin-left: 2px;
+      }
+      body {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+      Paragráfos são exemplos de box-level, mas os
+      <a href="#">links são exemplos de caixas inline-level</a>Vamos ver como
+      isso funciona na prática
+    </p>
+  </body>
+</html>

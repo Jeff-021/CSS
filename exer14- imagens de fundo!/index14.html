@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teste de fundo de imagens</title>
+    <style>
+      div.quadrado {
+        display: inline-block; /*invés de ficar um embaixo do outro vai ficar um do lado do outro*/
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: lightslategray;
+        width: 300px;
+        height: 300px;
+      }
+      /*deu 3 quadrados pois tem 3 divs, a classificaco delas vem com o id ou class abaixo, assim vou poder mexer nelas mais facilmente*/
+      #q1 {
+        background-color: skyblue;
+      }
+      #q2 {
+        background-image: linear-gradient(to bottom, yellow, orange);
+      }
+      #q3 {
+        background-image: url("imagens/pattern003.png"); /*serve para colocar a imagem dentro do formatdo do quadrado,ela adapta a imagem com o tamanho, e no fundo também*/
+      }
+      body {
+        background-image: url(imagens/wallpaper002.jpg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeito Fácil</title>
+    <style>
+      h1 {
+        background-color: lightgray;
+        height: 84px;
+        width: 242px;
+
+        /**/
+
+        border: 5px solid darkslategray; /*tamanho unico, nao tem 4 medidas*/
+        padding: 13px 10px 10px 10px; /*todas as medidas em px, sempre imaginar um relogio, cima,direita,baixo,esquerda) e colocar as medidas nessa ordem*/
+
+        /**/
+
+        margin: 13px 10px 36px 10px;
+        /**/
+
+        outline: 5px dashed blanchedalmond;
+      }
+      a {
+        color: brown;
+        border: 5px, solid, black; /*tamanho unico, nao tem 4 medidas*/
+        padding: 3px;
+        margin: 2px 4px 2px 2px;
+
+        /*se todas as medidas forem iguais basta apenas colocar uma vez*/
+
+        /*posso transformar um block (ocupa uma linha inteira) em inline (metade da linha e ainda continua o paragrafo)e um inline em block, basta colocara tag display*/
+      }
+      body {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+      Paragráfos são exemplos de box-level, mas os
+      <a href="#">links são exemplos de caixas inline-level</a>Vamos ver como
+      isso funciona na prática
+    </p>
+  </body>
+</html>

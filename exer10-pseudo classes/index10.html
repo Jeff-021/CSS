@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Classes!</title>
+    <style>
+      div {
+        display: inline-block; /*deixa tudo na mesma linha*/
+        background-color: rgb(206, 119, 57);
+        border: 1px solid black; /*deu uma borda nos quadrados*/
+        text-align: center;
+        height: 200px; /*altura*/
+        width: 200px; /*largura*/
+      }
+      /* #=id, usar uma vez por arquivo
+      .=class, uso livre
+      >= que a div é mais importante, oq ficar do lado oposto sera escondido, so sera mostrado com um comando especifico
+      := pseudo class
+      ::=pseudo element
+      */
+
+      div:hover {
+        background-color: yellow; /*pseudo classes, nada mais é que o estado da aplicacao, nesse exemplo o hover significa (passar o mousse por cima, assim mudando oq esta sendo exibido)*/
+
+        /*as pseudo classes sao representadas por (:), ela sao funçoes que eu posso dar para cada tag. */
+      }
+      .d1 {
+        background-color: brown;
+      }
+      .d2 {
+        background-color: cadetblue;
+      }
+      .d3 {
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d1">01</div>
+    <div class="d2">02</div>
+    <div class="d3">03</div>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Hover!</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div:hover {
+        color: rgb(211, 224, 29);
+      }
+      div > p {
+        display: none; /*o sinal de >, sig que a div é maior, nesse exemplo o unico p que sofrera mudança sera o que esta dentro da div (texto escondido);
+        O display none significa nao mostrar nada!!!*/
+      }
+      div:hover > p {
+        /*display block signi mostrar!*/
+        display: block;
+        color: black;
+        background-color: cadetblue;
+        width: 300px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mousse sobre o texto!</p>
+    <div>
+      Passe o mousse aqui!
+      <p>TEXTO ESCONDIDO....</p>
+    </div>
+    <p>Fim do exemplo!</p>
+  </body>
+</html>

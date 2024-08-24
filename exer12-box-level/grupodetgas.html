@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grupos de Tags para um site</title>
+    <style>
+      @font-face {
+        font-family: "gazpacho";
+        src: url("fonts/gazpacho,titulo-bold.otf") format("opentype");
+      }
+      header {
+        /*o header é responsavel pelo cabeçalho, a tag h1,h2,nav tem que estar dentro dele*/
+        font-family: "gazpacho";
+
+        padding: 37px;
+        margin: -18px -8px -8px -8px;
+        background-image: linear-gradient(to left, #7eadbf, #42708c);
+      }
+
+      h2 p {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      nav > a {
+        /*a tag nav é importantissima para criacao de menus, ela tem que estar dentro da tag header e para dar vida nos menuso exemplo a baixo é importante*/
+        text-decoration: none; /*pura estetica, serve para tirar o sublinhado do link*/
+        color: aliceblue;
+        font-weight: bold;
+        margin-right: 30px; /*serve para separar os botoes do suposto menu, no menu eu tive muita dificuldade e com essas simples tags se resolveu, so enquadrei dps com altura e largura veja abaixo*/
+        text-align: justify;
+      }
+      nav {
+        padding: 7px;
+        margin: 75px;
+
+        box-shadow: 1px 1px 2px 1px black; /*serviu para dar um sombreado no menu, ficou em formato 3d, posso configurar pelo ghrome as medidas */
+      }
+      nav > a:hover {
+        text-decoration: underline; /*deixar sublinhado quando passar o mousse*/
+      }
+      main {
+        margin: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Fall Garden</h1>
+
+      <nav>
+        <a href="#">Casa</a>
+        <a href="#">Viagens recoemndadas</a>
+        <a href="#">Meios de pagamento</a>
+        <a href="#">Sobre Nós!</a>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <h2>Sua primeira viagem?</h2>
+        <p>
+          Como é bom viajar né?, mas sabe o que seria melhor ainda?; Descansar e
+          deixar todas as as responsabilidades burograticas com a gente" Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Architecto sapiente
+          eveniet aperiam ducimus ex nulla earum, vel, itaque fugit voluptatum
+          error, necessitatibus laborum eos. Eligendi porro sit facilis! Fugit,
+          ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+          odit natus consectetur beatae sunt eaque praesentium quisquam optio
+          odio. Alias officia nesciunt quisquam nemo. Soluta est aut asperiores
+          ipsa suscipit! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Ullam reprehenderit veritatis earum cupiditate, consectetur
+          exercitationem temporibus. Corrupti provident id quod aperiam
+          voluptates illo quae dignissimos! Repellendus doloremque autem nostrum
+          debitis!
+        </p>
+        <br />
+        <h2>Veja um de nossos melhores pacotes:</h2>
+      </article>
+    </main>
+    <picture>
+      <source
+        media="(max-width:700px )"
+        srcset="imagem300px.jpg"
+        type="image/jpg"
+      />
+      <source
+        media="(max-width:1000px )"
+        srcset="imagem700px.jpg"
+        type="image/jpg"
+      />
+      <img
+        src="imagem1000px.jpg"
+        alt="imagem flexivel"
+        srcset="imagem1000px.jpg"
+      />
+    </picture>
+  </body>
+</html>

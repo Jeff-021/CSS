@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personalizando Links!</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serifGeorgia, "Times New Roman",
+          Times, serif;
+        background-color: rgb(238, 211, 94);
+        text-align: justify;
+      }
+      .basico {
+        text-align: center;
+        font-style: italic;
+        background-color: rgb(194, 65, 65);
+      }
+      a:visited {
+        /*as pseudo classes sao representadas por (:), ela sao funçoes que eu posso dar para cada tag, nesse exemplo (visited) significa q a cor muda quando um link foi ou nao visitado*/
+        color: blueviolet;
+      }
+      a {
+        text-decoration: none; /*serve para tirar o sublinhado do link, pura estetica*/
+        font-weight: bold; /*deixar em negrito*/
+      }
+
+      a:hover {
+        text-decoration: underline; /*pseudo de acao, nessa cinf ela esta sublinhando quando eu passo o mousse por cima, e ainda colocar a cor*/
+        color: black;
+      }
+
+      a:active {
+        color: darkgreen;
+      }
+      a::after {
+        /*antes, essa tag significa q antes de todos os links vai executar qualquer acao...*/
+        content: "☑";
+        font-weight: normal;
+        color: black;
+      }
+      a::before {
+        /*depois*/
+        content: "☑";
+        font-weight: normal;
+        color: black;
+
+        /*peguei o emoji do site (simbulos html), so copiei e colei,sempre q fizer isso colocar '', essa tag nao e pseudo classes, mas sim elementos, pois ela tem :: */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="basico">Personalizando Links!</h1>
+    <ul>
+      <li>
+        <a href="https://gustavoguanabara.github.io" target="_blank"
+          >Repositório Github</a
+        >
+      </li>
+      <li>
+        <a href="https://youtube.com/cursoemvideo/" target="_blank"
+          >Canal do Youtube</a
+        >
+      </li>
+      <li>
+        <a href="https://www.cursoemvideo.com" target="_blank"
+          >Site do CursoemVideo</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

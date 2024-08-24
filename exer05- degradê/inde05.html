@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gradinete em CSS</title>
+    <style>
+      @font-face {
+        font-family: "dellugay";
+        src: url("QUEER.TTF") format("truetype");
+        font-weight: bolder;
+        font-size: xx-small;
+      }
+
+      h1 {
+        font-family: "dellugay", "Courier New", Courier, monospace;
+        text-align: center;
+      }
+      h2 {
+        font-family: "dellugay" Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      /* sempre colocar * { e o height 100% significa a altura, essas são configuraçôes globais*/
+
+      body {
+        background-image: linear-gradient(
+          to bottom,
+          #e40203,
+          #ff8b00,
+          #feed01,
+          #008127,
+          #004dff,
+          #760789
+        );
+        background-attachment: fixed; /* deixar o degrade fixo, sempre colocar*/
+
+        /* 90deg é o unico jeito q eu achei para fazer o degrade da esquerda para a direita*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Projeto Victor 2024 - Parte I</h1>
+    <h2>Tenho muito orgulho que voçê se assumiu</h2>
+  </body>
+</html>
